@@ -1,59 +1,23 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Github, Linkedin, Mail } from "lucide-react";
-
-export default function PortfolioLandingPage() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8">
-      <div className="max-w-3xl w-full">
-        <Card className="shadow-2xl rounded-2xl">
-          <CardContent className="p-10 text-center">
-            <h1 className="text-4xl font-bold mb-4">Halo, saya [Nama Anda]</h1>
-            <p className="text-lg text-gray-600 mb-6">
-              Saya seorang pengembang web yang fokus pada pengalaman pengguna yang menarik dan performa optimal.
-            </p>
-            <div className="flex justify-center gap-4 mb-8">
-              <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="icon">
-                  <Github className="h-5 w-5" />
-                </Button>
-              </a>
-              <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="icon">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-              </a>
-              <a href="mailto:email@domain.com">
-                <Button variant="outline" size="icon">
-                  <Mail className="h-5 w-5" />
-                </Button>
-              </a>
-            </div>
-            <a href="#projects">
-              <Button className="px-6 py-2 text-lg rounded-xl">Lihat Proyek Saya</Button>
-            </a>
-          </CardContent>
-        </Card>
-
-        <section id="projects" className="mt-16">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Proyek Terbaru</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="rounded-2xl">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-2">Judul Proyek 1</h3>
-                <p className="text-gray-600">Deskripsi singkat proyek ini dan teknologi yang digunakan.</p>
-              </CardContent>
-            </Card>
-            <Card className="rounded-2xl">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-2">Judul Proyek 2</h3>
-                <p className="text-gray-600">Deskripsi singkat proyek ini dan teknologi yang digunakan.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-      </div>
-    </div>
-  );
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio - [Nama Anda]</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
