@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portofolio - Arif Galih Aji Himawan</title>
+  <title>Portfolio - Arif Galih Aji Himawan</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-LP+Z2ztqKz3eylGi6rJ1Ue8aL5tW7n7M5JHpln6zX+PAKTRJ+7TwDJqa9B3IScdg0RblSjiJRxM1CMxUp3go1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
@@ -25,6 +26,31 @@
       width: 100%;
       text-align: center;
     }
+    .profile-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.profile-card .info {
+  flex: 1;
+  min-width: 200px;
+}
     .socials i {
   font-size: 2rem;
   line-height: 2;
@@ -88,6 +114,10 @@
   .embed-wrapper blockquote {
     max-width: 100%;
     }
+    
+    .hidden {
+  display: none;
+}
   </style>
 </head>
 <body>
@@ -102,14 +132,28 @@
       <a href="mailto:galiih33@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 
+    <nav style="margin: 2rem 0;">
+  <h3 style="text-align:center;">Navigasi Proyek</h3>
+  <ul style="list-style:none; padding:0; text-align:center;">
+    <li><a href="#tanoto" style="margin: 0 1rem;">Tanoto Foundation</a></li>
+    <li><a href="#jepara" style="margin: 0 1rem;">Wisata Jepara</a></li>
+    <li><a href="#event" style="margin: 0 1rem;">Event Pendidikan</a></li>
+  </ul>
+</nav>
+
     <a href="#projects" class="button">Lihat Proyek Saya</a>
   </div>
 
-  <div class="card">
-    
+  <div class="profile-card">
+  <img src="foto.jpg" alt="Foto Arif Galih" />
+  <div class="info">
+    <h2>Arif Galih Aji Himawan</h2>
+    <p>Video Editor dan Graphic Designer. Lulusan S1 Desain Komunikasi Visual dan berpengalaman lebih dari 7 tahun di dunia media kreatif.</p>
+    <p><strong>Lokasi:</strong> Semarang, Jawa Tengah</p>
   </div>
+</div>
 
-  <div class="projects" id="projects">
+  <div class="projects" id="tanoto">
   <h2 style="text-align:center;">Tanoto Foundation</h2>
 
   <div class="project-card">
@@ -141,7 +185,7 @@
     </div>
   </div>
 
-    <div class="projects" id="projects">
+    <div class="projects" id="jepara">
   <h2 style="text-align:center;">Promosi Wisata Jepara</h2>
 
        <div class="project-card">
@@ -164,9 +208,39 @@
     </div>
   </div>
 
-      <div class="projects" id="projects">
-  <h2 style="text-align:center;">Promosi Wisata Jepara</h2>
- 
+      <div class="projects hidden" id="kuliner">
+  <h2 style="text-align:center;">Pembuatan Konten Kuliner</h2>
+
+        <div class="project-card">
+    <h3>Rekomendasi Cafe Semarang</h3>
+    <p>Dalam proyek ini, kami bekerja sama dengan beberapa Cafe untuk mempromosikan usaha mereka.</p>
+
+    <div class="embed-wrapper">
+    <!-- Instagram Embed -->
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFNDtnjuINC/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
+    </div>
+  </div>
+
+        <div class="project-card">
+    <h3>Rekomendasi Cafe Semarang</h3>
+    <p>Dalam proyek ini, kami bekerja sama dengan beberapa Cafe untuk mempromosikan usaha mereka.</p>
+
+    <div class="embed-wrapper">
+    <!-- Instagram Embed -->
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFe_0vOttqD/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
+    </div>
+  </div>
+
+        <div class="project-card">
+    <h3>Rekomendasi UMKM Daerah</h3>
+    <p>Dalam proyek ini, kami mengunjungi UMKM daerah untuk mencicipi jajanan viral dan mempromosikannya.</p>
+
+    <div class="embed-wrapper">
+    <!-- Tiktok Embed -->
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@tribunjateng/video/7471198771959844114" data-video-id="7471198771959844114
+" style="margin: 1rem auto; max-width: 325px; min-width: 225px;">
+    </div>
+  </div>
 
 <!-- Instagram & TikTok Embed Scripts -->
 <script async src="//www.instagram.com/embed.js"></script>
