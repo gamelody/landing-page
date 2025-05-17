@@ -89,17 +89,22 @@
       margin-top: 1.5rem;
     }
     .projects {
-      margin-top: 4rem;
-      max-width: 700px;
-      width: 100%;
-    }
-    .project-card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-      margin-bottom: 1.5rem;
-      text-align: center;
+  margin-top: 4rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
     }
     .project-card h3 {
       margin: 0 0 0.5rem;
@@ -156,14 +161,16 @@
   <div class="projects" id="tanoto">
   <h2 style="text-align:center;">Tanoto Foundation</h2>
 
-  <div class="project-card">
-    <h3>Pembelajaran Digitalisasi Numerasi Gen-Alpa</h3>
-    <p>Dalam proyek ini, kami bekerja sama dengan Tanoto Foundation membuat video tentang praktik baik mengajar yang dilakukan oleh guru-guru sekolah dasar.</p>
-    <div class="embed-wrapper">
-    <!-- Instagram Embed -->
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DJS22Fbh9Tq/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
-    </div>  
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Pembelajaran Digitalisasi Numerasi Gen-Alpa</h3>
+      <p>Dalam proyek ini, kami bekerja sama dengan Tanoto Foundation membuat video tentang praktik baik mengajar yang dilakukan oleh guru-guru sekolah dasar.</p>
+        <div class="embed-wrapper">
+          <!-- Instagram Embed -->
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DJS22Fbh9Tq/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
+        </div>  
     </div>
+
 
   <div class="project-card">
     <h3>Mengenalkan Pantai Melalui Literasi Big Book</h3>
@@ -184,19 +191,22 @@
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DIsKIIRBRSh/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
     </div>
   </div>
+  </div>
+    
 
     <div class="projects" id="jepara">
   <h2 style="text-align:center;">Promosi Wisata Jepara</h2>
 
-       <div class="project-card">
-    <h3>Konten Kuliner Khas Jepara</h3>
-    <p>Dalam proyek ini, kami bekerja sama dengan Pemkab Jepara membuat video untuk mempromosikan wisata di Jepara</p>
+  <div class="project-grid">  
+    <div class="project-card">
+      <h3>Konten Kuliner Khas Jepara</h3>
+      <p>Dalam proyek ini, kami bekerja sama dengan Pemkab Jepara membuat video untuk mempromosikan wisata di Jepara</p>
 
-    <div class="embed-wrapper">
-    <!-- Instagram Embed -->
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFxFIxaA-53/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
+        <div class="embed-wrapper">
+          <!-- Instagram Embed -->
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DFxFIxaA-53/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
+        </div>
     </div>
-  </div>
 
       <div class="project-card">
     <h3>Konten Promosi Wisata Pantai Tanjung Gelam Jepara</h3>
@@ -207,10 +217,12 @@
     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHqls_2NxtI/" data-instgrm-version="14" style="margin: 1rem auto;"></blockquote>
     </div>
   </div>
+  </div>
 
       <div class="projects" id="kuliner">
   <h2 style="text-align:center;">Pembuatan Konten Kuliner</h2>
 
+  <div class="project-grid">
         <div class="project-card">
     <h3>Rekomendasi Cafe Semarang</h3>
     <p>Dalam proyek ini, kami bekerja sama dengan beberapa Cafe untuk mempromosikan usaha mereka.</p>
@@ -240,6 +252,7 @@
     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@tribunjateng/video/7471198771959844114" data-video-id="7471198771959844114
 " style="margin: 1rem auto; max-width: 325px; min-width: 225px;">
     </div>
+  </div>
   </div>
 
 <!-- Instagram & TikTok Embed Scripts -->
